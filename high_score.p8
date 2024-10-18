@@ -4,17 +4,18 @@ high_score_table.characters = { "a", "b", "c", "d", "e", "f", "g", "h", "i", "j"
 score_entry = { entering = false, entry_number = 1, entry_character = 1, cycle_colours = { 10, 9, 8, 14 }, current_colour = 1, cycle_count = 0 }
 colours = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 }
 high_score_table.scores = {
-	{ name = "ari", score = 1.01 },
-	{ name = "hax", score = 1 },
+	{ name = "ari", score = 1.02 },
+	{ name = "leo", score = 1.01 },
+	{ name = "ari", score = 1 },
 	{ name = "ari", score = 0.58 },
-	{ name = "jzz", score = 0.57 },
+	{ name = "ari", score = 0.57 },
 	{ name = "ari", score = 0.56 },
 	{ name = "ari", score = 0.55 },
 	{ name = "ari", score = 0.54 },
 	{ name = "ari", score = 0.53 },
-	{ name = "aaa", score = 0.0 },
-	{ name = "aaa", score = 0.0 },
-	{ name = "aaa", score = 0.0 },
+	{ name = "ari", score = 0.52 },
+	{ name = "ari", score = 0.51 },
+	{ name = "ari", score = 0.50 },
 }
 
 function high_score_table.update()
@@ -73,7 +74,6 @@ function high_score_table.draw()
 			score_c = score_entry.cycle_colours[score_entry.current_colour]
 		end
 
-		--printh('n: '..score_name..', s: ' .. score.score .. ', c: ' .. score_c)
 		local score_text = score_name .. "...." .. high_score_table.get_score_text(score.score)
 		local score_x = 64 - #score_text * 2
 		if (not score_entry.entering) then
